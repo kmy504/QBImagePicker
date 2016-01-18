@@ -78,6 +78,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8EB718381C4D29400084A344 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/QBImagePicker.strings; sourceTree = "<group>"; };
 		AA2107321AD15B74002B3E46 /* QBCheckmarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBCheckmarkView.h; sourceTree = "<group>"; };
 		AA2107331AD15B74002B3E46 /* QBCheckmarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBCheckmarkView.m; sourceTree = "<group>"; };
 		AA2107341AD15B74002B3E46 /* QBVideoIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBVideoIconView.h; sourceTree = "<group>"; };
@@ -432,6 +433,7 @@
 				"zh-Hans",
 				es,
 				de,
+				ko,
 			);
 			mainGroup = AACD2EE41AD12DB10029BE0B;
 			productRefGroup = AACD2EEF1AD12DB10029BE0B /* Products */;
@@ -553,6 +555,7 @@
 				AA8229A01B57B284008BFB6E /* zh-Hans */,
 				AA8229A11B57B296008BFB6E /* es */,
 				AA8229A21B57B29E008BFB6E /* de */,
+				8EB718381C4D29400084A344 /* ko */,
 			);
 			name = QBImagePicker.strings;
 			sourceTree = "<group>";
