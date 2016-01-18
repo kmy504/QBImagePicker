@@ -44,6 +44,7 @@
         self.minimumNumberOfSelection = 1;
         self.numberOfColumnsInPortrait = 4;
         self.numberOfColumnsInLandscape = 7;
+        self.showEmptyAssetGroups = YES;
         
         self.assetsLibrary = [ALAssetsLibrary new];
         self.selectedAssetURLs = [NSMutableOrderedSet orderedSet];

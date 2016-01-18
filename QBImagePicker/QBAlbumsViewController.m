@@ -170,7 +170,9 @@
                 array = [NSMutableArray array];
             }
             
-            [array addObject:assetsGroup];
+            if((assetsGroup.numberOfAssets > 0) || (assetsGroup.numberOfAssets == 0 && self.imagePickerController.showEmptyAssetGroups == YES)) {
+                [array addObject:assetsGroup];
+            }
             
             mappedAssetsGroups[[assetsGroup valueForProperty:ALAssetsGroupPropertyType]] = array;
         }
