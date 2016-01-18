@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-#import <QBImagePicker/QBImagePicker.h>
+#import <QBOldImagePicker/QBOldImagePicker.h>
 
-@interface ViewController () <QBImagePickerControllerDelegate>
+@interface ViewController () <QBOldImagePickerControllerDelegate>
 
 @end
 
@@ -25,7 +25,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    QBImagePickerController *imagePickerController = [QBImagePickerController new];
+    QBOldImagePickerController *imagePickerController = [QBOldImagePickerController new];
     imagePickerController.delegate = self;
     imagePickerController.allowsMultipleSelection = (indexPath.section == 1);
     imagePickerController.showsNumberOfSelectedAssets = YES;
@@ -54,9 +54,9 @@
 }
 
 
-#pragma mark - QBImagePickerControllerDelegate
+#pragma mark - QBOldImagePickerControllerDelegate
 
-- (void)qb_imagePickerController:(QBImagePickerController *)imagePickerController didSelectAsset:(ALAsset *)asset
+- (void)qb_imagePickerController:(QBOldImagePickerController *)imagePickerController didSelectAsset:(ALAsset *)asset
 {
     NSLog(@"Selected asset:");
     NSLog(@"%@", asset);
@@ -64,7 +64,7 @@
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
-- (void)qb_imagePickerController:(QBImagePickerController *)imagePickerController didSelectAssets:(NSArray *)assets
+- (void)qb_imagePickerController:(QBOldImagePickerController *)imagePickerController didSelectAssets:(NSArray *)assets
 {
     NSLog(@"Selected assets:");
     NSLog(@"%@", assets);
@@ -72,7 +72,7 @@
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
-- (void)qb_imagePickerControllerDidCancel:(QBImagePickerController *)imagePickerController
+- (void)qb_imagePickerControllerDidCancel:(QBOldImagePickerController *)imagePickerController
 {
     NSLog(@"Canceled.");
     

@@ -236,8 +236,7 @@
 				AA2107401AD163E3002B3E46 /* Resources */,
 				AACD2EF11AD12DB10029BE0B /* Supporting Files */,
 			);
-			name = QBOldImagePicker;
-			path = QBImagePicker;
+			path = QBOldImagePicker;
 			sourceTree = "<group>";
 		};
 		AACD2EF11AD12DB10029BE0B /* Supporting Files */ = {
@@ -672,7 +671,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = QBImagePicker/Info.plist;
+				INFOPLIST_FILE = QBOldImagePicker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.questbeat.$(PRODUCT_NAME:rfc1034identifier)";
@@ -688,7 +687,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = QBImagePicker/Info.plist;
+				INFOPLIST_FILE = QBOldImagePicker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.questbeat.$(PRODUCT_NAME:rfc1034identifier)";
