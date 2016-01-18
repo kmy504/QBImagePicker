@@ -6,12 +6,12 @@
 //  Copyright (c) 2013年 Katsuma Tanaka. All rights reserved.
 //
 
-#import "QBImagePickerController.h"
+#import "QBOldImagePickerController.h"
 
 // ViewControllers
-#import "QBAlbumsViewController.h"
+#import "QBOldAlbumsViewController.h"
 
-@interface QBImagePickerController ()
+@interface QBOldImagePickerController ()
 
 @property (nonatomic, strong) UINavigationController *albumsNavigationController;
 
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation QBImagePickerController
+@implementation QBOldImagePickerController
 
 + (BOOL)isAccessible
 {
@@ -59,7 +59,7 @@
         [self setUpAlbumsViewController];
         
         // Set instance
-        QBAlbumsViewController *albumsViewController = (QBAlbumsViewController *)self.albumsNavigationController.topViewController;
+        QBOldAlbumsViewController *albumsViewController = (QBOldAlbumsViewController *)self.albumsNavigationController.topViewController;
         albumsViewController.imagePickerController = self;
     }
     

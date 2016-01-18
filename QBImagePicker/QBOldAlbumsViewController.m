@@ -6,23 +6,23 @@
 //  Copyright (c) 2015 Katsuma Tanaka. All rights reserved.
 //
 
-#import "QBAlbumsViewController.h"
+#import "QBOldAlbumsViewController.h"
 
 // Views
-#import "QBAlbumCell.h"
+#import "QBOldAlbumCell.h"
 
 // ViewControllers
-#import "QBImagePickerController.h"
-#import "QBAssetsViewController.h"
+#import "QBOldImagePickerController.h"
+#import "QBOldAssetsViewController.h"
 
-@interface QBImagePickerController (Private)
+@interface QBOldImagePickerController (Private)
 
 @property (nonatomic, strong) ALAssetsLibrary *assetsLibrary;
 @property (nonatomic, strong) NSBundle *assetBundle;
 
 @end
 
-@interface QBAlbumsViewController ()
+@interface QBOldAlbumsViewController ()
 
 @property (nonatomic, strong) IBOutlet UIBarButtonItem *doneButton;
 
@@ -30,7 +30,7 @@
 
 @end
 
-@implementation QBAlbumsViewController
+@implementation QBOldAlbumsViewController
 
 - (void)viewDidLoad
 {
@@ -81,7 +81,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    QBAssetsViewController *assetsViewController = segue.destinationViewController;
+    QBOldAssetsViewController *assetsViewController = segue.destinationViewController;
     assetsViewController.imagePickerController = self.imagePickerController;
     assetsViewController.assetsGroup = self.assetsGroups[self.tableView.indexPathForSelectedRow.row];
 }
@@ -331,7 +331,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    QBAlbumCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AlbumCell" forIndexPath:indexPath];
+    QBOldAlbumCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AlbumCell" forIndexPath:indexPath];
     cell.tag = indexPath.row;
     cell.borderWidth = 1.0 / [[UIScreen mainScreen] scale];
     

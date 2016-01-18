@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class QBImagePickerController;
+@class QBOldImagePickerController;
 @class ALAssetsGroup;
 
-@interface QBAssetsViewController : UICollectionViewController
+@interface QBOldAssetsViewController : UICollectionViewController
 
-@property (nonatomic, weak) QBImagePickerController *imagePickerController;
+@property (nonatomic, weak) QBOldImagePickerController *imagePickerController;
 @property (nonatomic, strong) ALAssetsGroup *assetsGroup;
 
 @end

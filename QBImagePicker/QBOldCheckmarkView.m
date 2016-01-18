@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Katsuma Tanaka. All rights reserved.
 //
 
-#import "QBCheckmarkView.h"
+#import "QBOldCheckmarkView.h"
 
-@implementation QBCheckmarkView
+@implementation QBOldCheckmarkView
 
 - (void)awakeFromNib
 {

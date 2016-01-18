@@ -6,15 +6,15 @@
 //  Copyright (c) 2015 Katsuma Tanaka. All rights reserved.
 //
 
-#import "QBAssetCell.h"
+#import "QBOldAssetCell.h"
 
-@interface QBAssetCell ()
+@interface QBOldAssetCell ()
 
 @property (weak, nonatomic) IBOutlet UIView *overlayView;
 
 @end
 
-@implementation QBAssetCell
+@implementation QBOldAssetCell
 
 - (void)setSelected:(BOOL)selected
 {

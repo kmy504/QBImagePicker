@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class QBImagePickerController;
+@class QBOldImagePickerController;
 
-@interface QBAlbumsViewController : UITableViewController
+@interface QBOldAlbumsViewController : UITableViewController
 
-@property (nonatomic, weak) QBImagePickerController *imagePickerController;
+@property (nonatomic, weak) QBOldImagePickerController *imagePickerController;
 
 @end

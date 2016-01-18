@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0620"
+   LastUpgradeVersion = "0720"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AACD2EED1AD12DB10029BE0B"
                BuildableName = "QBImagePickerOld.framework"
-               BlueprintName = "QBImagePickerOld"
-               ReferencedContainer = "container:QBImagePickerOld.xcodeproj">
+               BlueprintName = "QBOldImagePicker"
+               ReferencedContainer = "container:QBOldImagePicker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AACD2EF81AD12DB10029BE0B"
-               BuildableName = "QBImagePickerOld.xctest"
-               BlueprintName = "QBImagePickerOldTests"
-               ReferencedContainer = "container:QBImagePickerOld.xcodeproj">
+               BuildableName = "QBOldImagePicker.xctest"
+               BlueprintName = "QBOldImagePickerTests"
+               ReferencedContainer = "container:QBOldImagePicker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AACD2EF81AD12DB10029BE0B"
-               BuildableName = "QBImagePickerOld.xctest"
-               BlueprintName = "QBImagePickerOldTests"
-               ReferencedContainer = "container:QBImagePickerOld.xcodeproj">
+               BuildableName = "QBOldImagePicker.xctest"
+               BlueprintName = "QBOldImagePickerTests"
+               ReferencedContainer = "container:QBOldImagePicker.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -58,8 +58,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AACD2EED1AD12DB10029BE0B"
             BuildableName = "QBImagePickerOld.framework"
-            BlueprintName = "QBImagePickerOld"
-            ReferencedContainer = "container:QBImagePickerOld.xcodeproj">
+            BlueprintName = "QBOldImagePicker"
+            ReferencedContainer = "container:QBOldImagePicker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -80,8 +80,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AACD2EED1AD12DB10029BE0B"
             BuildableName = "QBImagePickerOld.framework"
-            BlueprintName = "QBImagePickerOld"
-            ReferencedContainer = "container:QBImagePickerOld.xcodeproj">
+            BlueprintName = "QBOldImagePicker"
+            ReferencedContainer = "container:QBOldImagePicker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -98,8 +98,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AACD2EED1AD12DB10029BE0B"
             BuildableName = "QBImagePickerOld.framework"
-            BlueprintName = "QBImagePickerOld"
-            ReferencedContainer = "container:QBImagePickerOld.xcodeproj">
+            BlueprintName = "QBOldImagePicker"
+            ReferencedContainer = "container:QBOldImagePicker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

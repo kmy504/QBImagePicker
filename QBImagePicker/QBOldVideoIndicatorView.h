@@ -1,5 +1,5 @@
 //
-//  QBVideoIconView.h
+//  QBVideoIndicatorView.h
 //  QBImagePicker
 //
 //  Created by Katsuma Tanaka on 2015/04/06.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-IB_DESIGNABLE
-@interface QBVideoIconView : UIView
+@interface QBOldVideoIndicatorView : UIView
 
-@property (nonatomic, strong) IBInspectable UIColor *iconColor;
+@property (nonatomic, weak) IBOutlet UILabel *timeLabel;
 
 @end

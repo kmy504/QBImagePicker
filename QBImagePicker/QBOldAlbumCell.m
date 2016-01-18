@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Katsuma Tanaka. All rights reserved.
 //
 
-#import "QBAlbumCell.h"
+#import "QBOldAlbumCell.h"
 
-@implementation QBAlbumCell
+@implementation QBOldAlbumCell
 
 - (void)setBorderWidth:(CGFloat)borderWidth
 {

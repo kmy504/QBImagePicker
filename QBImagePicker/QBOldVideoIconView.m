@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Katsuma Tanaka. All rights reserved.
 //
 
-#import "QBVideoIconView.h"
+#import "QBOldVideoIconView.h"
 
-@implementation QBVideoIconView
+@implementation QBOldVideoIconView
 
 - (void)awakeFromNib
 {

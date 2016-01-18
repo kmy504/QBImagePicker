@@ -9,31 +9,31 @@
 #import <UIKit/UIKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 
-@class QBImagePickerController;
+@class QBOldImagePickerController;
 
-@protocol QBImagePickerControllerDelegate <NSObject>
+@protocol QBOldImagePickerControllerDelegate <NSObject>
 
 @optional
-- (void)qb_imagePickerController:(QBImagePickerController *)imagePickerController didSelectAsset:(ALAsset *)asset;
-- (void)qb_imagePickerController:(QBImagePickerController *)imagePickerController didSelectAssets:(NSArray *)assets;
-- (void)qb_imagePickerControllerDidCancel:(QBImagePickerController *)imagePickerController;
+- (void)qb_imagePickerController:(QBOldImagePickerController *)imagePickerController didSelectAsset:(ALAsset *)asset;
+- (void)qb_imagePickerController:(QBOldImagePickerController *)imagePickerController didSelectAssets:(NSArray *)assets;
+- (void)qb_imagePickerControllerDidCancel:(QBOldImagePickerController *)imagePickerController;
 
-- (BOOL)qb_imagePickerController:(QBImagePickerController *)imagePickerController shouldSelectAsset:(ALAsset *)asset;
+- (BOOL)qb_imagePickerController:(QBOldImagePickerController *)imagePickerController shouldSelectAsset:(ALAsset *)asset;
 
 @end
 
-typedef NS_ENUM(NSUInteger, QBImagePickerControllerFilterType) {
+typedef NS_ENUM(NSUInteger, QBOldImagePickerControllerFilterType) {
     QBImagePickerControllerFilterTypeNone = 0,
     QBImagePickerControllerFilterTypePhotos,
     QBImagePickerControllerFilterTypeVideos
 };
 
-@interface QBImagePickerController : UIViewController
+@interface QBOldImagePickerController : UIViewController
 
-@property (nonatomic, weak) id<QBImagePickerControllerDelegate> delegate;
+@property (nonatomic, weak) id<QBOldImagePickerControllerDelegate> delegate;
 
 @property (nonatomic, copy) NSArray *groupTypes;
-@property (nonatomic, assign) QBImagePickerControllerFilterType filterType;
+@property (nonatomic, assign) QBOldImagePickerControllerFilterType filterType;
 
 @property (nonatomic, assign) BOOL allowsMultipleSelection;
 @property (nonatomic, assign) NSUInteger minimumNumberOfSelection;

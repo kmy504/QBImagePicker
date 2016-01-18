@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class QBVideoIndicatorView;
+@class QBOldVideoIndicatorView;
 
-@interface QBAssetCell : UICollectionViewCell
+@interface QBOldAssetCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet QBVideoIndicatorView *videoIndicatorView;
+@property (weak, nonatomic) IBOutlet QBOldVideoIndicatorView *videoIndicatorView;
 
 @property (nonatomic, assign) BOOL showsOverlayViewWhenSelected;
 

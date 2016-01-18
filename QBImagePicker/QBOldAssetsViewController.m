@@ -6,24 +6,24 @@
 //  Copyright (c) 2015 Katsuma Tanaka. All rights reserved.
 //
 
-#import "QBAssetsViewController.h"
+#import "QBOldAssetsViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 
 // Views
-#import "QBAssetCell.h"
-#import "QBVideoIndicatorView.h"
+#import "QBOldAssetCell.h"
+#import "QBOldVideoIndicatorView.h"
 
 // ViewControllers
-#import "QBImagePickerController.h"
+#import "QBOldImagePickerController.h"
 
-@interface QBImagePickerController (Private)
+@interface QBOldImagePickerController (Private)
 
 @property (nonatomic, strong) ALAssetsLibrary *assetsLibrary;
 @property (nonatomic, strong) NSBundle *assetBundle;
 
 @end
 
-@interface QBAssetsViewController () <UICollectionViewDelegateFlowLayout>
+@interface QBOldAssetsViewController () <UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong) IBOutlet UIBarButtonItem *doneButton;
 
@@ -38,7 +38,7 @@
 
 @end
 
-@implementation QBAssetsViewController
+@implementation QBOldAssetsViewController
 
 - (void)viewDidLoad
 {
@@ -352,7 +352,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    QBAssetCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"AssetCell" forIndexPath:indexPath];
+    QBOldAssetCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"AssetCell" forIndexPath:indexPath];
     cell.tag = indexPath.item;
     cell.showsOverlayViewWhenSelected = self.imagePickerController.allowsMultipleSelection;
     
@@ -463,7 +463,7 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    QBImagePickerController *imagePickerController = self.imagePickerController;
+    QBOldImagePickerController *imagePickerController = self.imagePickerController;
     NSMutableOrderedSet *selectedAssetURLs = imagePickerController.selectedAssetURLs;
     
     ALAsset *asset = self.assets[indexPath.item];
@@ -512,7 +512,7 @@
         return;
     }
     
-    QBImagePickerController *imagePickerController = self.imagePickerController;
+    QBOldImagePickerController *imagePickerController = self.imagePickerController;
     NSMutableOrderedSet *selectedAssetURLs = imagePickerController.selectedAssetURLs;
     
     // Remove asset from set
