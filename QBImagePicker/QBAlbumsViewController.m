@@ -348,7 +348,7 @@
         [assetsGroup enumerateAssetsAtIndexes:indexes options:0 usingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
             if (!result || cell.tag != indexPath.row) return;
             
-            UIImage *thumbnail = [UIImage imageWithCGImage:[result thumbnail]];
+            UIImage *thumbnail = [UIImage imageWithCGImage:[result aspectRatioThumbnail]];
             
             if (index == NSMaxRange(range) - 1) {
                 cell.imageView1.hidden = NO;

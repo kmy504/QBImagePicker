@@ -358,7 +358,7 @@
     
     // Image
     ALAsset *asset = self.assets[indexPath.item];
-    UIImage *image = [UIImage imageWithCGImage:[asset thumbnail]];
+    UIImage *image = [UIImage imageWithCGImage:[asset aspectRatioThumbnail]];
     cell.imageView.image = image;
     
     // Video indicator
