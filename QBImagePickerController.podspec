@@ -7,9 +7,9 @@ Pod::Spec.new do |s|
   s.author           = { "questbeat" => "questbeat@gmail.com" }
   s.source           = { :git => "https://github.com/questbeat/QBImagePicker.git", :tag => s.version.to_s }
   s.social_media_url = "https://twitter.com/questbeat"
-  s.source_files     = "QBImagePicker/*.{h,m}"
-  s.exclude_files    = "QBImagePicker/QBImagePicker.h"
-  s.resource_bundles = { "QBOldImagePicker" => "QBImagePicker/*.{lproj,storyboard}" }
+  s.source_files     = "QBOldImagePicker/*.{h,m}"
+  s.exclude_files    = "QBOldImagePicker/QBImagePicker.h"
+  s.resource_bundles = { "QBOldImagePicker" => "QBOldImagePicker/*.{lproj,storyboard}" }
   s.platform         = :ios, "6.0"
   s.requires_arc     = true
   s.frameworks       = "AssetsLibrary"
