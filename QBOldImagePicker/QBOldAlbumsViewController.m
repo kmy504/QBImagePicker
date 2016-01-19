@@ -103,16 +103,16 @@
 
 - (IBAction)cancel:(id)sender
 {
-    if ([self.imagePickerController.delegate respondsToSelector:@selector(qb_imagePickerControllerDidCancel:)]) {
-        [self.imagePickerController.delegate qb_imagePickerControllerDidCancel:self.imagePickerController];
+    if ([self.imagePickerController.delegate respondsToSelector:@selector(qb_oldImagePickerControllerDidCancel:)]) {
+        [self.imagePickerController.delegate qb_oldImagePickerControllerDidCancel:self.imagePickerController];
     }
 }
 
 - (IBAction)done:(id)sender
 {
-    if ([self.imagePickerController.delegate respondsToSelector:@selector(qb_imagePickerController:didSelectAssets:)]) {
+    if ([self.imagePickerController.delegate respondsToSelector:@selector(qb_oldImagePickerController:didSelectAssets:)]) {
         [self fetchAssetsFromSelectedAssetURLsWithCompletion:^(NSArray *assets) {
-            [self.imagePickerController.delegate qb_imagePickerController:self.imagePickerController didSelectAssets:assets];
+            [self.imagePickerController.delegate qb_oldImagePickerController:self.imagePickerController didSelectAssets:assets];
         }];
     }
 }
@@ -205,15 +205,15 @@
     ALAssetsFilter *assetsFilter;
     
     switch (self.imagePickerController.filterType) {
-        case QBImagePickerControllerFilterTypeNone:
+        case QBOldImagePickerControllerFilterTypeNone:
             assetsFilter = [ALAssetsFilter allAssets];
             break;
             
-        case QBImagePickerControllerFilterTypePhotos:
+        case QBOldImagePickerControllerFilterTypePhotos:
             assetsFilter = [ALAssetsFilter allPhotos];
             break;
             
-        case QBImagePickerControllerFilterTypeVideos:
+        case QBOldImagePickerControllerFilterTypeVideos:
             assetsFilter = [ALAssetsFilter allVideos];
             break;
     }

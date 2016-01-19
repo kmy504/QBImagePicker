@@ -190,9 +190,9 @@
 
 - (IBAction)done:(id)sender
 {
-    if ([self.imagePickerController.delegate respondsToSelector:@selector(qb_imagePickerController:didSelectAssets:)]) {
+    if ([self.imagePickerController.delegate respondsToSelector:@selector(qb_oldImagePickerController:didSelectAssets:)]) {
         [self fetchAssetsFromSelectedAssetURLsWithCompletion:^(NSArray *assets) {
-            [self.imagePickerController.delegate qb_imagePickerController:self.imagePickerController didSelectAssets:assets];
+            [self.imagePickerController.delegate qb_oldImagePickerController:self.imagePickerController didSelectAssets:assets];
         }];
     }
 }
@@ -400,7 +400,7 @@
         NSUInteger numberOfVideos = self.numberOfVideos;
         
         switch (self.imagePickerController.filterType) {
-            case QBImagePickerControllerFilterTypeNone:
+            case QBOldImagePickerControllerFilterTypeNone:
             {
                 NSString *format;
                 if (numberOfPhotos == 1) {
@@ -419,7 +419,7 @@
             }
                 break;
                 
-            case QBImagePickerControllerFilterTypePhotos:
+            case QBOldImagePickerControllerFilterTypePhotos:
             {
                 NSString *key = (numberOfPhotos == 1) ? @"format_photo" : @"format_photos";
                 NSString *format = NSLocalizedStringFromTableInBundle(key, @"QBImagePicker", bundle, nil);
@@ -428,7 +428,7 @@
             }
                 break;
                 
-            case QBImagePickerControllerFilterTypeVideos:
+            case QBOldImagePickerControllerFilterTypeVideos:
             {
                 NSString *key = (numberOfVideos == 1) ? @"format_video" : @"format_videos";
                 NSString *format = NSLocalizedStringFromTableInBundle(key, @"QBImagePicker", bundle, nil);
@@ -449,9 +449,9 @@
 
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([self.imagePickerController.delegate respondsToSelector:@selector(qb_imagePickerController:shouldSelectAsset:)]) {
+    if ([self.imagePickerController.delegate respondsToSelector:@selector(qb_oldImagePickerController:shouldSelectAsset:)]) {
         ALAsset *asset = self.assets[indexPath.item];
-        return [self.imagePickerController.delegate qb_imagePickerController:self.imagePickerController shouldSelectAsset:asset];
+        return [self.imagePickerController.delegate qb_oldImagePickerController:self.imagePickerController shouldSelectAsset:asset];
     }
     
     if ([self isAutoDeselectEnabled]) {
@@ -500,8 +500,8 @@
             }
         }
     } else {
-        if ([imagePickerController.delegate respondsToSelector:@selector(qb_imagePickerController:didSelectAsset:)]) {
-            [imagePickerController.delegate qb_imagePickerController:imagePickerController didSelectAsset:asset];
+        if ([imagePickerController.delegate respondsToSelector:@selector(qb_oldImagePickerController:didSelectAsset:)]) {
+            [imagePickerController.delegate qb_oldImagePickerController:imagePickerController didSelectAsset:asset];
         }
     }
 }

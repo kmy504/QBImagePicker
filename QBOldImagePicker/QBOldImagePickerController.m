@@ -40,7 +40,7 @@
                             @(ALAssetsGroupPhotoStream),
                             @(ALAssetsGroupAlbum)
                             ];
-        self.filterType = QBImagePickerControllerFilterTypeNone;
+        self.filterType = QBOldImagePickerControllerFilterTypeNone;
         self.minimumNumberOfSelection = 1;
         self.numberOfColumnsInPortrait = 4;
         self.numberOfColumnsInLandscape = 7;

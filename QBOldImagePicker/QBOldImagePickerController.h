@@ -14,18 +14,18 @@
 @protocol QBOldImagePickerControllerDelegate <NSObject>
 
 @optional
-- (void)qb_imagePickerController:(QBOldImagePickerController *)imagePickerController didSelectAsset:(ALAsset *)asset;
-- (void)qb_imagePickerController:(QBOldImagePickerController *)imagePickerController didSelectAssets:(NSArray *)assets;
-- (void)qb_imagePickerControllerDidCancel:(QBOldImagePickerController *)imagePickerController;
+- (void)qb_oldImagePickerController:(QBOldImagePickerController *)imagePickerController didSelectAsset:(ALAsset *)asset;
+- (void)qb_oldImagePickerController:(QBOldImagePickerController *)imagePickerController didSelectAssets:(NSArray *)assets;
+- (void)qb_oldImagePickerControllerDidCancel:(QBOldImagePickerController *)imagePickerController;
 
-- (BOOL)qb_imagePickerController:(QBOldImagePickerController *)imagePickerController shouldSelectAsset:(ALAsset *)asset;
+- (BOOL)qb_oldImagePickerController:(QBOldImagePickerController *)imagePickerController shouldSelectAsset:(ALAsset *)asset;
 
 @end
 
 typedef NS_ENUM(NSUInteger, QBOldImagePickerControllerFilterType) {
-    QBImagePickerControllerFilterTypeNone = 0,
-    QBImagePickerControllerFilterTypePhotos,
-    QBImagePickerControllerFilterTypeVideos
+    QBOldImagePickerControllerFilterTypeNone = 0,
+    QBOldImagePickerControllerFilterTypePhotos,
+    QBOldImagePickerControllerFilterTypeVideos
 };
 
 @interface QBOldImagePickerController : UIViewController
